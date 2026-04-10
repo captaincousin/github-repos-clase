@@ -35,6 +35,8 @@ class ScoreModel:
 
         y_pred = best_model.predict_proba(df_data_score[features])
         df_data_score['y_pred'] = y_pred[:,1]
+        
+        pritn("se corrigio el error")
         return df_data_score
 
     def score_preprocess_model(self, df_data_score):
