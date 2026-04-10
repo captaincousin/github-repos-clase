@@ -23,6 +23,7 @@ class ScoreModel:
     def prepare_dataset(self, df_data):
         x_cols = pd.read_csv(f"{self._output_path_preprocess}/final_variables.csv")["variable"].values.tolist()
         df_data_prepared = df_data[x_cols]
+        print("")
         df_data_prepared = self.prepare_impute_missing(df_data_prepared, x_cols)
 
         return df_data_prepared
