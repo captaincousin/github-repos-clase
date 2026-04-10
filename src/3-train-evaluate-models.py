@@ -70,6 +70,8 @@ def main():
                              'min_samples_leaf': [100], 'min_impurity_decrease': [0]}
     process_train_evaluate_models(model_parameters_grid)
 
+    print("todo correcto")
+
 if __name__ == "__main__":
     fire.Fire(main)
 
